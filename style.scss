@@ -70,4 +70,17 @@ main{
     display: flex;
     align-items: center;
     gap: 125px;
+    padding: 90px 0;
+
+    .images{
+        .mainImage{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .thumbnailList{
+            display: flex;
+        }
+    }
 }

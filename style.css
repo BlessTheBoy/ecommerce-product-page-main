@@ -91,5 +91,20 @@ main {
       -ms-flex-align: center;
           align-items: center;
   gap: 125px;
+  padding: 90px 0;
+}
+
+main .images .mainImage {
+  width: 100%;
+}
+
+main .images .mainImage img {
+  width: 100%;
+}
+
+main .images .thumbnailList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
