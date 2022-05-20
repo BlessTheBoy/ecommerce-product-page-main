@@ -1,0 +1,48 @@
+header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 57px;
+  padding: 28px 0 34px;
+  border-bottom: 1px solid #979797;
+
+  .navWrap nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+
+    li {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 26px;
+      color: #69707d;
+
+      &:hover,
+      &.active,
+      &:focus {
+        color: #1d2026;
+      }
+    }
+  }
+
+  .iconsWrap {
+    display: flex;
+    gap: 46px;
+    align-items: center;
+
+    .avatar {
+      box-sizing: content-box;
+      border-radius: 50%;
+      width: 50px;
+
+      @media screen and (max-width: 800px) {
+        width: 24px;
+      }
+
+      &:hover,
+      &:focus {
+        border: 2px solid #ff7e1b;
+        outline: none;
+      }
+    }
+  }
+}

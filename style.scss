@@ -1,3 +1,5 @@
+@import "header";
+
 * {
   margin: 0;
   padding: 0;
@@ -21,50 +23,11 @@ body {
   flex-direction: column;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 28px 0 34px;
-  border-bottom: 1px solid #979797;
+.mobile {
+  display: none;
 
-  > div {
-    display: flex;
-    align-items: center;
-  }
-
-  .logo {
-    width: 138px;
-  }
-
-  nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-    margin-left: 56.5px;
-    gap: 32px;
-    // max-width: 1140px;
-
-    li {
-      font-weight: normal;
-      font-size: 15px;
-      line-height: 26px;
-      color: #69707d;
-      transition: color 0.3s;
-
-      &:hover {
-        color: #1d2026;
-      }
-    }
-  }
-
-  .avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: inline-block;
-    margin-left: 47px;
+  @media screen and (max-width: 800px) {
+    display: block;
   }
 }
 

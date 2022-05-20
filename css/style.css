@@ -1,3 +1,61 @@
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr auto;
+  -webkit-column-gap: 57px;
+          column-gap: 57px;
+  padding: 28px 0 34px;
+  border-bottom: 1px solid #979797;
+}
+
+header .navWrap nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+}
+
+header .navWrap nav ul li {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  color: #69707d;
+}
+
+header .navWrap nav ul li:hover, header .navWrap nav ul li.active, header .navWrap nav ul li:focus {
+  color: #1d2026;
+}
+
+header .iconsWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 46px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .iconsWrap .avatar {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-radius: 50%;
+  width: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  header .iconsWrap .avatar {
+    width: 24px;
+  }
+}
+
+header .iconsWrap .avatar:hover, header .iconsWrap .avatar:focus {
+  border: 2px solid #ff7e1b;
+  outline: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -28,67 +86,14 @@ body {
           flex-direction: column;
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 28px 0 34px;
-  border-bottom: 1px solid #979797;
+.mobile {
+  display: none;
 }
 
-header > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header .logo {
-  width: 138px;
-}
-
-header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  list-style: none;
-  margin-left: 56.5px;
-  gap: 32px;
-}
-
-header nav ul li {
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 26px;
-  color: #69707d;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-}
-
-header nav ul li:hover {
-  color: #1d2026;
-}
-
-header .avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: inline-block;
-  margin-left: 47px;
+@media screen and (max-width: 800px) {
+  .mobile {
+    display: block;
+  }
 }
 
 main {

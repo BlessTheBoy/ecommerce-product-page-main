@@ -23,37 +23,42 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <div>
-        <img class="logo" src="images/logo.svg" alt="" />
+    <header class="header">
+      <div class="logoWrap">
+        <img
+          src="images/icon-menu.svg"
+          alt="hamburger"
+          id="hamburger"
+          class="mobile"
+        />
+        <img src="images/logo.svg" alt="" class="logo" />
+      </div>
+
+      <div class="navWrap">
+        <img
+          src="images/icon-close.svg"
+          alt="closeMenu"
+          id="closeImage"
+          class="mobile"
+        />
+
         <nav>
           <ul>
-            <li>
-              <a href="#">Collections</a>
-            </li>
-            <li>
-              <a href="#">Men</a>
-            </li>
-            <li>
-              <a href="#">Women</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </nav>
       </div>
 
-      <div>
-        <a href="#">
-          <img class="cart" src="images/icon-cart.svg" alt="" />
-        </a>
-        <a href="#">
-          <img class="avatar" src="images/image-avatar.png" alt="" />
-        </a>
+      <div class="iconsWrap">
+        <div class="cartWrap">
+          <img src="images/icon-cart.svg" alt="cart icon" class="cart" />
+          <span>3</span>
+        </div>
+        <img src="images/image-avatar.png" alt="user avatar" class="avatar" tabindex="0" />
       </div>
     </header>
 
