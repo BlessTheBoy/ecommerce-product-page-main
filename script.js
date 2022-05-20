@@ -24,3 +24,16 @@ thumbnailImages.forEach((thumbnail, index) =>
     mainImage.src = `images/image-product-${index + 1}.jpg`;
   })
 );
+
+// Add the "open" class to navWrap when the hamburger button is clicked
+// Adding the navWrap
+const navWrap = document.querySelector(".navWrap");
+const menuButtons = document.querySelectorAll(".mobile");
+
+menuButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    navWrap.classList.toggle("open");
+  });
+});
+
+// Remove the "open" class from navWrap when the close button is clicked
